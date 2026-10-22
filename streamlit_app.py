@@ -25,3 +25,27 @@ with tabs[1]:
 with tabs[2]:
     st.subheader(f"Volume for MSFT")
     st.bar_chart(df['Volume'])
+
+with tabs[3]:
+    st.subheader("💡 Quote of the Day")
+
+    from datetime import date
+
+    quotes = [
+        "The best way to predict the future is to create it.",
+        "Success is not final, failure is not fatal.",
+        "Dream big and dare to fail.",
+        "Great things take time.",
+        "Work hard in silence, let success make the noise.",
+        "Every day is a new opportunity.",
+        "Don't watch the clock; do what it does. Keep going."
+    ]
+
+    # Choose a different quote each day
+    today = date.today()
+    quote = quotes[today.toordinal() % len(quotes)]
+
+    st.info(quote)
+    st.write(f"📅 {today.strftime('%B %d, %Y')}")
+    st.caption("Made by Justin Wang 🚀")
+    
