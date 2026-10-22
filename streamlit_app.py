@@ -26,6 +26,7 @@ with tabs[2]:
     st.subheader(f"Volume for MSFT")
     st.bar_chart(df['Volume'])
 
+#Tab 4: Quote of the Day
 with tabs[3]:
     st.subheader("💡 Quote of the Day")
 
