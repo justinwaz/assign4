@@ -31,7 +31,7 @@ with tabs[3]:
     st.subheader("💡 Quote of the Day")
 
     from datetime import date
-
+#list of quotes
     quotes = [
         "The best way to predict the future is to create it.",
         "Success is not final, failure is not fatal.",
@@ -51,7 +51,7 @@ with tabs[3]:
     st.caption("Made by Justin Wang 🚀")
 
 
-# Tab 4: Interactive Drawing Board
+# Tab 5: Interactive Drawing Board
 with tabs[4]:
     st.subheader("🎨 Justin's Drawing Board")
     st.write("Choose a shape and drag your mouse to draw!")
